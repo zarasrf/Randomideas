@@ -1,4 +1,4 @@
-import IdeasApi from "./services/ideasApi"
+import IdeasApi from "../services/ideasApi"
 class IdeaList {
     constructor() {
         this._ideaListEl = document.querySelector('#idea-list')
@@ -23,6 +23,11 @@ class IdeaList {
             console.log(error);
         }
     }
+
+    // addIdeaToList(idea) {
+    //     this._ideas.push(idea)
+    //     this.render()
+    // }
 
     getTagClass(tag){
         tag = tag.toLowerCase()
